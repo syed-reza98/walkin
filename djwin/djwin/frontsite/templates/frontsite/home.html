@@ -1,0 +1,53 @@
+{% extends 'frontsite/layout/main.html' %}
+{% load static %}
+
+{% block content %}
+<div class="hero">
+    <div class="container-wrap d-flex justify-content-end align-items-end">
+        <a href="https://www.youtube.com/watch?v=ism1XqnZJEg" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+            <span class="ion-ios-play play"></span>
+        </a>
+    </div>
+    <!-- Home Slider -->
+    {% include 'frontsite/home-components/home-slider.html' %}
+</div>
+
+    <!-- Check Availability Searchbar -->
+
+    {% include 'frontsite/home-components/checkavailability.html' %}
+
+    <!-- Features Example: Swimming Pool, Resturents -->
+
+    {% include 'frontsite/home-components/home-feature-categories.html' %}
+
+    <!-- Hotel Service -->
+
+    {% include 'frontsite/home-components/home-services.html' %}
+
+    <!-- Room List For home page -->
+
+    {% include 'frontsite/home-components/home-room.html' %}
+
+    <!-- Customer Review -->
+
+    {% include 'frontsite/home-components/home-customer-review.html' %}
+
+
+    <!-- Recommended Hotel Video -->
+
+    {% include 'frontsite/home-components/hotel-video.html' %}
+
+    <!-- Restaurant -->
+
+    {% include 'frontsite/home-components/home-restaurant.html' %}
+
+
+    <!-- Recent Blog -->
+
+    {% include 'frontsite/home-components/home-recent-blog.html' %}
+
+    <!-- Instagram -->
+
+    {% include 'frontsite/home-components/home-instagram.html' %}
+
+{% endblock %}
